@@ -818,9 +818,134 @@
 
 /* BODY */
 .body {
-    padding-top: 36px;
     padding-bottom: 36px;
     background-color: #f5f5f5;
+}
+
+/* SHOP INFO */
+.home-user-profile {
+    background-color: var(--white-color);
+    margin-bottom: 24px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.user-profile {
+    position: relative;
+    height: 136px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.user-profile-img {
+    height: 100%;
+    width: 100%;
+    filter: blur(2px);
+    background: url('https://wallpapercave.com/wp/iiQmoR8.jpg') center center /cover;
+}
+.user-profile-info {
+    top: 8px;
+    bottom: 8px;
+    left: 16px;
+    right: 16px;
+    position: absolute;
+    padding: 4px 8px 8px;
+}
+
+.profile-info {
+    padding: 4px;
+    display: flex;
+}
+
+.profile-info-avt {
+    position: relative; 
+    text-decoration: none;  
+}
+.profile-img {
+    height: 72px;
+    width: 72px;
+    object-fit: cover;
+    border-radius: 36px;
+    outline: rgba(117, 117, 117, .5) solid 4px;
+}
+.profile-info--preferred {
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    width: fit-content;
+    padding: 0 2px;
+    border-radius: 2px 4px;
+    opacity: .9;
+}
+
+.profile-info-info {
+    flex: 1;
+    margin-top: 16px;
+    margin-left: 12px;
+}
+.profile-info-name {
+    text-transform: uppercase;
+    display: block;
+    color: var(--white-color);
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+.profile-info-status {
+    color: rgba(233, 233, 233, 0.8);
+    font-size: 1.4rem;
+}
+
+.profile-interactives {
+    display: flex;
+    margin-top: 4px;
+    padding: 0 4px;
+    justify-content: space-between;
+}
+.profile-interactives-btn {
+    width: 49%;
+    height: 25px;
+    padding: 2px;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+.profile-interactives-btn:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+.profile-interactives-btn .far {
+    margin-right: 4px;
+}
+
+
+.user-overview {
+    padding-left: 32px;
+    padding-top: 10px;
+    height: 136px;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+.user-overview__detail {
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+.user-overview__detail-value {
+    color: var(--primary-color);
+    margin-left: 2px;
+}
+.user-overview__detail--clickable:hover {
+    cursor: pointer;
+    opacity: .9;
 }
 
 /* APP CONTAINER */
